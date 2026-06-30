@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:api": "npm run start:dev --workspace=apps/api",
-    "dev:web": "npm run dev --workspace=apps/web",
-    "dev:mobile": "npm run dev --workspace=apps/mobile",
+    "dev:api": "node api.js && npm run start:dev --workspace=apps/api",
+    "dev:web": "node api.js && npm run dev --workspace=apps/web",
+    "dev:mobile": "node api.js && npm run dev --workspace=apps/mobile",
     "db:migrate": "npm run db:migrate --workspace=apps/api",
     "db:seed": "npm run seed:landing-ai --workspace=apps/api",
     "build:api": "npm run build --workspace=apps/api",
