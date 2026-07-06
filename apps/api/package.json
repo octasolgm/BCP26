@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node dist/main",
-    "start:dev": "nest start --watch",
+    "start": "node api.js && node dist/main",
+    "start:dev": "node api.js && nest start --watch",
     "build": "nest build",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "db:migrate": "node scripts/run-migrations.mjs",

@@ -11,15 +11,17 @@ apps/*/dist/
 packages/*/dist/
 *.tsbuildinfo
 
-# Environment files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Environment files (never commit real secrets — use .env.example templates)
+!.env.example
+!**/.env.example
+env
+/env
+*.pem
+*credentials*.json
+*service-account*.json
+google-application-credentials.json
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -67,3 +69,4 @@ apps/reguliq-dotnet/client/reguliq-web/.angular/
 apps/reguliq-dotnet/src/Reguliq.Api/data/
 **/data/reguliq.db
 apps/api/dist/
+config.bat
